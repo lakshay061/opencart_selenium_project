@@ -1,0 +1,50 @@
+19:01:58.158 [main] INFO  testCases.TC_002_LoginPageTest - clicked on login button on login page
+19:01:58.200 [main] INFO  testCases.TC_002_LoginPageTest - Test case passed
+19:01:58.545 [main] INFO  testCases.TC_002_LoginPageTest - **** Finished TC_002_LoginPageTest ****
+19:07:25.615 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Starting TC_001_AccountRegistrationPageTest ****
+19:07:26.132 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on My Account link
+19:07:26.770 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on Registration link
+19:07:26.772 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Setting user details
+19:07:27.245 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on policy agreement 
+19:07:30.160 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on continue button
+19:07:30.160 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - validating the assert statement
+19:07:30.219 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Test case passed
+19:07:30.225 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Finished TC_001_AccountRegistrationPageTest ****
+19:07:33.149 [main] INFO  testCases.TC_002_LoginPageTest - **** Starting TC_002_LoginPageTest ****
+19:07:33.634 [main] INFO  testCases.TC_002_LoginPageTest - setting email address and password
+19:07:34.297 [main] INFO  testCases.TC_002_LoginPageTest - clicked on login button on login page
+19:07:34.352 [main] INFO  testCases.TC_002_LoginPageTest - Test case passed
+19:07:35.021 [main] INFO  testCases.TC_002_LoginPageTest - **** Finished TC_002_LoginPageTest ****
+19:09:05.684 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Starting TC_001_AccountRegistrationPageTest ****
+19:09:06.144 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on My Account link
+19:09:06.715 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on Registration link
+19:09:06.716 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Setting user details
+19:09:07.154 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on policy agreement 
+19:09:09.981 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on continue button
+19:09:09.981 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - validating the assert statement
+19:09:10.039 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Test case passed
+19:09:10.043 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Finished TC_001_AccountRegistrationPageTest ****
+19:09:12.899 [main] INFO  testCases.TC_002_LoginPageTest - **** Starting TC_002_LoginPageTest ****
+19:09:13.382 [main] INFO  testCases.TC_002_LoginPageTest - setting email address and password
+19:09:14.051 [main] INFO  testCases.TC_002_LoginPageTest - clicked on login button on login page
+19:09:14.112 [main] INFO  testCases.TC_002_LoginPageTest - Test case passed
+19:09:14.821 [main] INFO  testCases.TC_002_LoginPageTest - **** Finished TC_002_LoginPageTest ****
+19:20:14.474 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Starting TC_001_AccountRegistrationPageTest ****
+19:20:14.937 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on My Account link
+19:20:15.573 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on Registration link
+19:20:15.576 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Setting user details
+19:20:16.107 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on policy agreement 
+19:20:18.744 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on continue button
+19:20:18.744 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - validating the assert statement
+19:20:18.816 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Test case passed
+19:20:18.822 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Finished TC_001_AccountRegistrationPageTest ****
+19:20:21.644 [main] INFO  testCases.TC_002_LoginPageTest - **** Starting TC_002_LoginPageTest ****
+19:20:22.071 [main] INFO  testCases.TC_002_LoginPageTest - setting email address and password
+19:20:22.870 [main] INFO  testCases.TC_002_LoginPageTest - clicked on login button on login page
+19:20:22.899 [main] INFO  testCases.TC_002_LoginPageTest - Test case passed
+19:20:23.491 [main] INFO  testCases.TC_002_LoginPageTest - **** Finished TC_002_LoginPageTest ****
+19:23:25.634 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Starting TC_001_AccountRegistrationPageTest ****
+19:23:26.133 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on My Account link
+19:23:26.908 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on Registration link
+19:23:26.909 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Setting user details
+19:23:27.342 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on policy agreement 

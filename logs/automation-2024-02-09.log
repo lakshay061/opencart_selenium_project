@@ -1,0 +1,52 @@
+15:48:09.762 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:48:10.384 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:48:11.012 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:48:21.074 [main] INFO  testCases.TC_003_LoginPageDDT - Test case passed
+15:48:21.075 [main] INFO  testCases.TC_003_LoginPageDDT - **** Finished TC_003_LoginPageDDT ****
+15:48:21.081 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:48:21.741 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:48:22.508 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:48:32.599 [main] INFO  testCases.TC_003_LoginPageDDT - Test case passed
+15:48:32.601 [main] INFO  testCases.TC_003_LoginPageDDT - **** Finished TC_003_LoginPageDDT ****
+15:48:32.607 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:48:33.307 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:48:33.950 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:48:44.013 [main] ERROR testCases.TC_003_LoginPageDDT - Test case failed
+15:50:47.101 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:50:47.647 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:50:48.525 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:50:49.181 [main] INFO  testCases.TC_003_LoginPageDDT - Test case passed
+15:50:49.184 [main] INFO  testCases.TC_003_LoginPageDDT - **** Finished TC_003_LoginPageDDT ****
+15:50:49.189 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:50:49.798 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:50:50.485 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:51:00.573 [main] INFO  testCases.TC_003_LoginPageDDT - Test case passed
+15:51:00.574 [main] INFO  testCases.TC_003_LoginPageDDT - **** Finished TC_003_LoginPageDDT ****
+15:51:00.579 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:51:01.310 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:51:01.982 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:51:12.042 [main] INFO  testCases.TC_003_LoginPageDDT - Test case passed
+15:51:12.043 [main] INFO  testCases.TC_003_LoginPageDDT - **** Finished TC_003_LoginPageDDT ****
+15:51:12.049 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:51:12.607 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:51:13.265 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:51:23.348 [main] INFO  testCases.TC_003_LoginPageDDT - Test case passed
+15:51:23.349 [main] INFO  testCases.TC_003_LoginPageDDT - **** Finished TC_003_LoginPageDDT ****
+15:51:23.358 [main] INFO  testCases.TC_003_LoginPageDDT - **** Starting TC_003_LoginPageDDT ****
+15:51:23.902 [main] INFO  testCases.TC_003_LoginPageDDT - setting email address and password
+15:51:24.642 [main] INFO  testCases.TC_003_LoginPageDDT - clicked on login button on login page
+15:51:34.666 [main] ERROR testCases.TC_003_LoginPageDDT - Test case failed
+15:55:40.696 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - **** Starting TC_003_LoginPageDataDrivenTest ****
+15:55:41.431 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - setting email address and password
+15:55:42.112 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - clicked on login button on login page
+15:55:42.787 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - Test case passed
+15:55:42.790 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - **** Finished TC_003_LoginPageDataDrivenTest ****
+15:55:42.795 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - **** Starting TC_003_LoginPageDataDrivenTest ****
+15:55:43.387 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - setting email address and password
+15:55:44.007 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - clicked on login button on login page
+15:55:54.057 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - Test case passed
+15:55:54.057 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - **** Finished TC_003_LoginPageDataDrivenTest ****
+15:55:54.064 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - **** Starting TC_003_LoginPageDataDrivenTest ****
+15:55:54.673 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - setting email address and password
+15:55:55.290 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - clicked on login button on login page
+15:56:05.356 [main] INFO  testCases.TC_003_LoginPageDataDrivenTest - Test case passed

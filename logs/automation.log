@@ -1,0 +1,24 @@
+19:23:30.255 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on continue button
+19:23:30.262 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - validating the assert statement
+19:23:30.319 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Test case passed
+19:23:30.319 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Finished TC_001_AccountRegistrationPageTest ****
+19:23:33.412 [main] INFO  testCases.TC_002_LoginPageTest - **** Starting TC_002_LoginPageTest ****
+19:23:34.389 [main] INFO  testCases.TC_002_LoginPageTest - setting email address and password
+19:23:35.228 [main] INFO  testCases.TC_002_LoginPageTest - clicked on login button on login page
+19:23:35.264 [main] INFO  testCases.TC_002_LoginPageTest - Test case passed
+19:23:35.990 [main] INFO  testCases.TC_002_LoginPageTest - **** Finished TC_002_LoginPageTest ****
+19:24:44.825 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - **** Starting TC_001_AccountRegistrationPageTest ****
+19:24:45.312 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on My Account link
+19:24:45.844 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - clicked on Registration link
+19:24:45.845 [main] INFO  testCases.TC_001_AccountRegistrationPageTest - Setting user details
+19:24:46.274 [main] ERROR testCases.TC_001_AccountRegistrationPageTest - Test Failed
+19:24:46.277 [main] ERROR testCases.TC_001_AccountRegistrationPageTest - Some exception occured {}: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b570f246ae93b2b063fc242389b5e6c, findElement {value=//input[@id='input-confirm'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\LAKSHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54124/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b570f246ae93b2b063fc242389b5e6c
+19:24:49.167 [main] INFO  testCases.TC_002_LoginPageTest - **** Starting TC_002_LoginPageTest ****

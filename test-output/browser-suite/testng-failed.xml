@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [browser-suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="chrome-test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testAccountRegistration"/>
+        </methods>
+      </class> <!-- testCases.TC_001_AccountRegistrationPageTest -->
+    </classes>
+  </test> <!-- chrome-test(failed) -->
+  <test thread-count="5" parallel="tests" name="edge-test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="edge"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testAccountRegistration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC_001_AccountRegistrationPageTest -->
+    </classes>
+  </test> <!-- edge-test(failed) -->
+</suite> <!-- Failed suite [browser-suite] -->

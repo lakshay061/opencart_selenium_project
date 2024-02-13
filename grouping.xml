@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="master-suite">
+
+	<groups>
+		<run>
+			<!-- <include name="sanity" /> -->
+			<!-- <include name="regression" /> -->
+			<include name="master" />
+			<!-- <exclude name="" />  -->
+		</run>
+	</groups>
+	
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="os" value="Windows" />
+
+		<classes>
+			<!-- either we declare all the classes here but only those will executed that will be included in groups 
+				 i.e TC_003_LoginPageDataDrivenTest class will never execute because i have not added groups in this class
+				 neither "sanity", "regression" nor "master" -->
+			<class name="testCases.TC_001_AccountRegistrationPageTest" />
+			<class name="testCases.TC_002_LoginPageTest" />
+			<class name="testCases.TC_003_LoginPageDataDrivenTest" />
+		</classes>
+	</test>
+</suite> 
