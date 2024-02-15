@@ -10,7 +10,7 @@
 	<build>
 		<pluginManagement>
 			<plugins>
-				
+
 				<!-- For compiling the project (Learn these two plugins name)-->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -103,5 +103,14 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.1.1</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.5</version>
+		</dependency>
+
+
 	</dependencies>
 </project>
