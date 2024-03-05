@@ -1,5 +1,10 @@
 package testBase;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -27,67 +32,87 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-	public static WebDriver driver;  // static because we refer same driver instance in ExtentReportManager (for capturing screenshot). 
-	public Logger logger;     // from log4j dependency
+	public static WebDriver driver; // static because we refer same driver instance in ExtentReportManager (for
+									// capturing screenshot).
+	public Logger logger; // from log4j dependency
 	public Properties propertyFile;
 
-	@BeforeClass(groups = {"regression", "sanity", "master"})    // add all or total groups in setup and tearDown methods
-	@Parameters({"browser", "os"})
+	@BeforeClass(groups = { "regression", "sanity", "master" }) // add all or total groups in setup and tearDown methods
+	@Parameters({ "browser", "os" })
 	public void setUp(String browser, String os) throws IOException {
-		
+
 		// Setting Logs..
-		logger = LogManager.getLogger(this.getClass());   // from log4j dependency\
-		
+		logger = LogManager.getLogger(this.getClass()); // from log4j dependency\
+
 		// Getting properties from config.properties file..
 		FileReader file = new FileReader(".\\src\\test\\resources\\config.properties");
 		propertyFile = new Properties();
 		propertyFile.load(file);
-		
-		// launching browser on parameter conditions from XML and from config.properties file..
+
+		// launching browser on parameter conditions from XML and from config.properties
+		// file..
 		String env = propertyFile.getProperty("execution_env").toLowerCase();
-		
-		if(env.equals("remote")) {
-			
+
+		if (env.equals("remote")) {
+
 			String nodeURL = "http://localhost:4444/wd/hub";
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 
 			// FOR OS
 			switch (os.toLowerCase()) {
-			case "windows": capabilities.setPlatform(Platform.WIN10); break;
-			case "mac": capabilities.setPlatform(Platform.MAC); break;
-			default: System.out.println("No matching os found...");
-						return;
+			case "windows":
+				capabilities.setPlatform(Platform.WIN10);
+				break;
+			case "mac":
+				capabilities.setPlatform(Platform.MAC);
+				break;
+			default:
+				System.out.println("No matching os found...");
+				return;
 			}
-			
+
 			// FOR BROWSER
 			switch (browser.toLowerCase()) {
-            case "chrome": capabilities.setBrowserName("chrome"); break;
-            case "firefox": capabilities.setBrowserName("firefox"); break;
-            case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
-            default: System.out.println("No matching browser found..");
-                        return;
-            }
-			
+			case "chrome":
+				capabilities.setBrowserName("chrome");
+				break;
+			case "firefox":
+				capabilities.setBrowserName("firefox");
+				break;
+			case "edge":
+				capabilities.setBrowserName("MicrosoftEdge");
+				break;
+			default:
+				System.out.println("No matching browser found..");
+				return;
+			}
+
 			driver = new RemoteWebDriver(new URL(nodeURL), capabilities);
-		}
-		else {
+		} else {
 			switch (browser.toLowerCase()) {
-			case "chrome": driver = new ChromeDriver(); break;
-			case "firefox": driver = new FirefoxDriver(); break;
-			case "edge": driver = new EdgeDriver(); break;
-			default: System.out.println("No matching browser found..");
-						return;
+			case "chrome":
+				driver = new ChromeDriver();
+				break;
+			case "firefox":
+				driver = new FirefoxDriver();
+				break;
+			case "edge":
+				driver = new EdgeDriver();
+				break;
+			default:
+				System.out.println("No matching browser found..");
+				return;
 			}
 		}
-		
+
 		driver.manage().deleteAllCookies();
-		
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(propertyFile.getProperty("appURL"));
 		driver.manage().window().maximize();
 	}
 
-	@AfterClass(groups = {"regression", "sanity", "master"})
+	@AfterClass(groups = { "regression", "sanity", "master" })
 	public void tearDown() {
 		driver.quit();
 	}
@@ -108,19 +133,39 @@ public class BaseClass {
 
 		return (string + "@" + number);
 	}
-	
+
 	public String captureScreen(String testMethodName) {
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		
+
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		
-		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + testMethodName + "_" + timeStamp + ".png";
-		File targetFile=new File(targetFilePath);
-		
+
+		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + testMethodName + "_" + timeStamp + ".png";
+		File targetFile = new File(targetFilePath);
+
 		sourceFile.renameTo(targetFile);
-			
+
 		return targetFilePath;
+	}
+
+	public void fileuploading(String filePath) {
+
+		try {
+			StringSelection sel = new StringSelection(filePath);
+			Clipboard clip = Toolkit.getDefaultToolkit().getSystemClipboard();
+			clip.setContents(sel, null);  // For setting or copying the path into the clipboard so that we can paste it later
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+		} catch (Exception e) {
+			System.out.println("Issue in file uploading " + e);
+		}
 	}
 
 }
